@@ -47,11 +47,25 @@ describe('sections > programmes', () => {
         section.show('citv');
         setTimeout(() => {
             try {
-                assert.equal(document.querySelectorAll('.programmes__citv li').length, 6, 'Number of items rendered');
+                assert.equal(document.querySelectorAll('.programmes__citv li').length, 5, 'Number of items rendered');
                 done();
             } catch(err) {
                 done(err);
             }
+        }, 300);
+    });
+
+    it('should render an img for each program', (done) => {
+        section.show('citv');
+        setTimeout(() => {
+            const programmeList = document.querySelectorAll('.programmes__citv li');
+
+            for (let i = 0; i < programmeList.length; i++) {
+                assert.equal(programmeList[i].getElementsByTagName('img').length, 1, 'Number of imgs per program');
+            }
+
+            done();
+
         }, 300);
     });
 

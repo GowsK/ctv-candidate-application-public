@@ -1,5 +1,12 @@
-.programmes h1 {
+.programmes h1, .programmes h2 {
     margin-left: 15px;
+    margin-right: 15px;
+}
+.programmes h2 {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 15px;
 }
 .programmes img {
     float: left;
@@ -12,3 +19,25 @@
 .programmes h3 {
     margin-top: 0;
 }
+.channel-selector {
+    align-items: center;
+    display: flex;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.channel-selector p {
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+.list-group__btn {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+.list-group__btn:hover {
+    background-color: white;
+    color: black;
+}
+
