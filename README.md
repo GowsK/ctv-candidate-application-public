@@ -66,3 +66,15 @@ Of the 8 features below choose at least 2 (you can do more). They are of varying
 7. Allow the user to select a channel (itv, itv2, itv3, itv4, itvbe, citv)
 
 8. Surprise us! Do something we haven't thought of
+
+### What I Completed
+
+- Fixed the application errors
+- Fixed the unit tests
+- Wrote a unit test to check every list item of a program contains an image
+- Displayed original broadcast date and time
+- Formatted original broadcast date and time via Moment JS
+- Showed the categories a program has
+- Showed the channel strapline
+- Allowed user to select a channel
+- **Bonus:** Allowed user to filter programmes by selecting category badge in program list item
