@@ -1,5 +1,17 @@
 ## CTV Test
 
+### What I Completed
+
+- Fixed the application errors
+- Fixed the unit tests
+- Wrote a unit test to check every list item of a program contains an image
+- Displayed original broadcast date and time
+- Formatted original broadcast date and time
+- Showed the categories a program has
+- Showed the channel strapline
+- Allowed user to select a channel
+- **Bonus:** Allowed user to filter programmes by selecting category badge in program list item
+
 ### Information
 
 This app has been made to run on:
