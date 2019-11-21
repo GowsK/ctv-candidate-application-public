@@ -26,8 +26,7 @@
   "dependencies": {
     "axios": "0.17.1",
     "babel-plugin-rewire": "1.1.0",
-    "bootstrap": "3.3.7",
-    "moment": "^2.24.0"
+    "bootstrap": "3.3.7"
   },
   "devDependencies": {
     "babel": "6.23.0",

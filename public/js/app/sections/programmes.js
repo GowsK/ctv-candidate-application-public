@@ -87,11 +87,14 @@ class Programmes {
         parent.appendChild(title);
     }
     appendBroadcastDateTime(parent, item) {
-        const timestamp = item._embedded.latestProduction.broadcastDateTime.original;
-        const date = moment(timestamp).format('Do MMMM YYzY');
-        const time = moment(timestamp).format('hA');
+        const timestamp = new Date(item._embedded.latestProduction.broadcastDateTime.original);
+        const time = timestamp.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+        const d = timestamp.getDate();
+        const m = timestamp.getMonth() + 1;
+        const y = timestamp.getFullYear();
+        const formattedDate = (d <= 9 ? '0' + d : d) + '/' + (m <= 9 ? '0' + m : m) + '/' + y;
         const dateContainer = document.createElement('div');
-        let str = `<p><b>Original Broadcast Date</b>: ${date}</p><p><b>Original Broadcast TIme</b>: ${time}</p>`;
+        let str = `<p><b>Original Broadcast Date</b>: ${formattedDate}</p><p><b>Original Broadcast TIme</b>: ${time}</p>`;
         dateContainer.innerHTML = str;
         parent.appendChild(dateContainer);
     }
